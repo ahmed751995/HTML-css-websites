@@ -1,0 +1,212 @@
+body{
+  font-size: 15px;
+  font-family: Arial, Helvetica,sans-serif;
+  line-height: 1.5;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f4f4f4;
+}
+/* global **/
+.container{
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.dark{
+  background: #35424a;
+  color: white;
+  padding: 15px;
+}
+button{
+  background: #e8491d;
+  border: none;
+  width: 100px;
+  height: 35px;
+  color: white;
+}
+/* header **/
+#header{
+  background-color: #35424a;
+  color: white;
+  border-bottom: 2px solid #e8491d;
+  min-height: 70px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#header h1{
+  float: left;
+  margin: 0px;
+  padding-top: 10px;
+}
+
+#header h1 span{
+  color: #e8491d;
+}
+
+#header nav{
+  float: right;
+  margin-top: 8px;
+}
+
+#header ul{
+  list-style: none;
+  padding: 0px;
+}
+
+#header li{
+  display: inline;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+}
+
+#header ul .select a{
+  color: #e8491d;
+}
+
+/* showcast **/
+#showcast{
+  background: url("../img/showcase.jpg") no-repeat 0 -400px;
+  min-height: 400px;
+  color: white;
+}
+#showcast h1{
+  text-align: center;
+  font-size: 55px;
+  margin-top: 90px;
+  margin-bottom: 10px;
+}
+#showcast p{
+  text-align: center;
+  font-size: 20px;
+}
+
+/* subscription **/
+#subscription{
+  background-color: #35424a;
+  color: white;
+  padding: 15px;
+}
+#subscription h1{
+  float: left;
+}
+#subscription form{
+  float: right;
+  margin-top: 15px;
+}
+
+#subscription form input[type="email"]{
+  width: 250px;
+}
+/* #subscription form button{
+  background: #e8491d;
+  border: none;
+  width: 100px;
+  height: 35px;
+  color: white;
+} */
+
+#boxes{
+  margin-top: 25px;
+}
+
+.box{
+  width: 33%;
+  float: left;
+  text-align: center;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.box img{
+  width: 90px;
+}
+
+/* main-col **/
+.main-col {
+  float: left;
+  width: 65%;
+  box-sizing: border-box;
+}
+.main-col ul{
+  padding: 0px;
+}
+.main-col ul li{
+  border: 1px #cccccc solid;
+  background: #e6e6e6;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* side bar */
+.aside{
+  margin-top: 20px;
+  width: 30%;
+  float: right;
+  box-sizing: border-box;
+}
+.aside form label{
+  display: block;
+}
+.aside form input{
+  margin-bottom: 5px;
+  width: 90%;
+}
+.aside form textarea{
+  width: 90%;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+/* footer **/
+footer{
+  background: #e8491d;
+  min-height: 100px;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  padding-top: 10px;
+}
+footer a{
+  text-decoration: underline;
+}
+
+
+
+/* media Queries **/
+@media(max-width: 768px){
+  #header h1,
+  #header nav,
+  #header nav li,
+  #subscription form,
+  #subscription h1,
+  #boxes .box,
+  .aside,
+  .main-col{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  #showcast h1{
+    font-size: 40px;
+  }
+  #subscription form input[type="email"]{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  button{
+    display: block;
+    width: 100%;
+  }
+  .aside{
+    margin-bottom: 10px;
+  }
+}
