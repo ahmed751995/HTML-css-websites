@@ -157,7 +157,7 @@ ul{
 }
 
 .tabs .container>div {
-  color: #504e4e;
+    color: #504e4e;
   padding: 1.2rem 0;
 }
 
@@ -182,8 +182,8 @@ ul{
   grid-gap: 3rem;
 }
 
-#tab-1-content .container img {
-  width: 380px;
+#tab-1-content  img {
+  width: 480px;
 }
 
 #tab-1-content .container p {
@@ -192,7 +192,7 @@ ul{
 
 /* tab 2 */
 #tab-2-content {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
   align-items: center;
@@ -238,6 +238,11 @@ ul{
 
 #tab-3-content .table tr:nth-child(odd){
   background-color: var(--dark-color);
+}
+
+#tab-2-content,
+#tab-3-content {
+    display: none;
 }
 
 /* footer */
@@ -302,4 +307,17 @@ ul{
       margin: auto;
     }
 
+}
+@media(max-height: 600px) {
+   .showcase-content{
+    margin-top: 2rem;
+  }
+  .showcase-content h1{
+    font-size: 4rem;
+  }
+  .showcase-content p{
+    font-size: 1rem;
+  }
+  .showcase-content a{ 
+    font-size: 1rem;
 }

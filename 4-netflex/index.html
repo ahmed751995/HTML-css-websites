@@ -6,12 +6,12 @@
   <title>Netflix</title>
   <script src="https://kit.fontawesome.com/38740c223c.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src="./js/tabs.js">
 
   </script>
 </head>
 
 <body>
+   
   <header class="showcase">
     <section class="showcase-topbar">
       <img class="topbar-img" src="https://i.ibb.co/r5krrdz/logo.png" alt="">
@@ -27,15 +27,15 @@
   </header>
   <section class="tabs">
     <div class="container">
-      <div class="open-tab">
+      <div id="tab-1" class="open-tab">
         <i class="fas fa-door-open fa-3x"></i>
         <p>Cancel at any time</p>
       </div>
-      <div>
+      <div id="tab-2">
         <i class="fas fa-tablet-alt fa-3x"></i>
         <p>Watch anywhere</p>
       </div>
-      <div>
+      <div id="tab-3">
         <i class="fas fa-tags fa-3x"></i>
         <p>Pick your price</p>
       </div>
@@ -44,7 +44,7 @@
   <section class="tab-content">
     <div class="container">
       <!-- tab-1-content -->
-      <!-- <div id="tab-1-content" class="tab-inner-content">
+      <div id="tab-1-content" class="tab-inner-content">
         <div>
           <p> If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime. </p>
           <a href="" class="btn">Watch Free For 30 Days</a>
@@ -52,9 +52,9 @@
         <div>
           <img src="https://i.ibb.co/J2xDJV7/tab-content-1.png" alt="">
         </div>
-      </div> -->
+      </div>
       <!-- tab-2-content -->
-      <!-- <div id="tab-2-content" class="tab-inner-content">
+      <div id="tab-2-content" class="tab-inner-content">
         <div>
           <p class="bg-text">Watch TV shows and movies anytime, anywhere — personalized for you. </p>
         </div>
@@ -76,7 +76,7 @@
           <p class="md-text">  Use any computer  </p>
           <p class="dark-text">  Watch right on Netflix.com. </p>
         </div>
-      </div> -->
+      </div>
       <!-- tab-3-content -->
       <div id="tab-3-content">
         <p class="bg-text"> Choose one plan and watch everything on Netflix. </p>
@@ -173,8 +173,9 @@
         <li><a href="#">Legal Notices</a></li>
       </ul>
     </div>
-
+   
   </footer>
+  <script src="js/dom.js"></script>
 </body>
 
 </html>
