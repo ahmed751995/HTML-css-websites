@@ -112,3 +112,17 @@ body {
         top : -40px;
     }
 }
+
+@media (max-height: 800px) {
+    .mario, .luigi, .sky img {
+        height: 100px;
+    }
+
+    .luigi {
+        top: 30%;
+    }
+
+    .sky img:nth-child(2) {
+        top: 50px;
+    }
+}
